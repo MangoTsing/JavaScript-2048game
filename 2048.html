@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+	<title>上官衍鹏——2048</title>
+</head>
+<link rel="stylesheet" href="./2048.css">
+<body>
+	<main>
+		<div class="main">
+			<div id="gameover">游戏结束了</div>
+			<div id="peace">暂停游戏,点击继续</div>
+			<div id="final"></div>
+			<div class="container" id="container">
+            	<div class="item" id="item00"></div>
+            	<div class="item" id="item01"></div>
+            	<div class="item" id="item02"></div>
+            	<div class="item" id="item03"></div>
+            	<div class="item" id="item10"></div>
+            	<div class="item" id="item11"></div>
+            	<div class="item" id="item12"></div>
+            	<div class="item" id="item13"></div>
+            	<div class="item" id="item20"></div>
+            	<div class="item" id="item21"></div>
+            	<div class="item" id="item22"></div>
+            	<div class="item" id="item23"></div>
+            	<div class="item" id="item30"></div>
+            	<div class="item" id="item31"></div>
+            	<div class="item" id="item32"></div>
+            	<div class="item" id="item33"></div>
+            	
+        	</div><button id="btn">4*4游戏开始</button>
+		</div><span id="score">score</span>
+
+	</main><p style="text-align: center;">ps:还差计时模式和5*5没写完，都比较好写，已经留好参数，改了绑定事件即可</p>
+</body>
+<script src="./2048.js"></script>
+<script>
+      function ab(arr1, arr2) {
+    let ar1=arr1.sort();
+      let ar2=arr2.sort().reverse();
+      let num=0;
+      for (let i = 0; i < ar1.length; i++) {
+             num =num+ ar1[i]*ar2[i]
+       } 
+       console.log(num);
+    return num;
+}
+console.log(ab([1,2,3,4,5], [5,1,1,2,3]));
+</script>
+</html>

@@ -1,0 +1,200 @@
+
+	body{
+		margin:0;
+		padding: 0;
+	}
+	main{
+		height: 600px;
+		width: 600px;
+		margin: 0 auto;
+		display: flex;
+		 align-items:center;
+		 display: -webkit-flex; /* Safari */
+	}
+	#container{
+		display: flex;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		height: 408px;
+		width: 408px;
+		opacity: 0.5;
+		background: #ccc0b2;
+		flex-wrap:wrap;
+		-webkit-flex-wrap:wrap;
+		display: -webkit-flex; /* Safari */
+
+		justify-content: center;
+		
+		/*outline: 0 none;*/
+	}
+	.item{
+		
+	    width: 100px;
+	    height: 100px;
+	    font-size: 40px;
+	    line-height: 80px;
+	    border: 1px solid black;
+	    text-align: center;
+		background: #ccc0b2;
+		align-items:flex-start;
+		align-items:-webkit-start;
+
+		-webkit-touch-callout: none; /* iOS Safari */
+
+		-webkit-user-select: none; /* Chrome/Safari/Opera */
+
+		-khtml-user-select: none; /* Konqueror */
+
+		-moz-user-select: none; /* Firefox */
+
+		-ms-user-select: none; /* Internet Explorer/Edge */
+
+		user-select: none;
+				/* 拖拽时禁止选中 */
+	}
+	@keyframes mymove
+		{
+		0% {font-size:40px;
+			opacity: 1;background: goldenrod}
+		50% {font-size:50px;opacity: 0.5}
+		100%{font-size:40px;opacity: 1}
+		}
+
+		@-moz-keyframes mymove /* Firefox */
+		{
+		0% {font-size:40px;
+			opacity: 1;}
+		50% {font-size:50px;opacity: 0.5}
+		100%{font-size:40px;opacity: 1}
+		}
+
+		@-webkit-keyframes mymove /* Safari 和 Chrome */
+		{
+		0% {font-size:40px;
+			opacity: 1;}
+		50% {font-size:50px;opacity: 0.5}
+		100%{font-size:40px;opacity: 1}
+		}
+
+		@-o-keyframes mymove /* Opera */
+		{
+		0% {font-size:40px;
+			opacity: 1;}
+		50% {font-size:50px;opacity: 0.5}
+		100%{font-size:40px;opacity: 1}
+		}
+.n0{
+    background: #ccc0b2;
+	
+}
+ .n2
+{
+    background: #eee4da;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+    color: #7c736a;
+}
+ .n4
+{
+    color: #7c736a;
+    background: #ece0c8;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+    color: #7c736a;
+}
+ .n8
+{
+    color: #fff7eb;
+    background: #f2b179;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n16
+{
+    color:#fff7eb;
+    background:#f59563;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n32
+{
+    color:#fff7eb;
+    background:#f57c5f;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n64
+{
+    color:#fff7eb;
+    background:#f65d3b;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n128
+{
+    color:#fff7eb;
+    background:#edce71;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n256
+{
+    color:#fff7eb;
+    background:#edcc61;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n512
+{
+    color:#fff7eb;
+    background:#ecc850;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n1024
+{
+    color:#fff7eb;
+    background:#edc53f;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+ .n2048
+{
+    color:#fff7eb;
+    background:#eec22e;animation: mymove 1s;
+  -moz-animation: mymove 1s; /* Firefox */
+  -webkit-animation: mymove 1s; /* Safari 和 Chrome */
+  -o-animation: mymove 1s; /* Opera */
+}
+#gameover{
+	height: 408px;
+	width: 408px;
+	background: red;
+	
+}
+#final{
+	display: none;
+}
+#peace{
+	height: 408px;
+	width: 408px;
+	background: #ecc850;
+	display: none;
+}
+#btn{
+	cursor: pointer;
+	width: 100px;
+	margin: 30px auto;
+	height: 40px;
+	display: block;
+}
