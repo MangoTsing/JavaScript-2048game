@@ -1,3 +1,7 @@
+/*
+	author:sgyp 18/4/22
+*/
+
 var sgypGame = {
 	start: function() {
 		this.data = new Array();
@@ -329,5 +333,13 @@ var sgypGame = {
 }
 sgypGame.start();
 document.getElementById('btn').addEventListener('click', function() {
+	sgypGame.Heng=4;
+	sgypGame.Shu=4;
+	sgypGame.score=0;
+	sgypGame.state=1;
+	sgypGame.data=null;
+	document.getElementById("gameover").style.display = "none";
+	document.getElementById("final").style.display='none'
+	document.getElementById('container').style.display = "flex";
 	sgypGame.start();
 });
