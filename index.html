@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MangoTsing</title>
+</head>
+<style>
+    body,
+    header,
+    ul,
+    li,
+    p,
+    div,
+    html,
+    span,
+    h3,
+    a,
+    blockquote {
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    .hiBoy{
+        display: inline-flex;
+        flex-direction: column;
+        background: #5cadff
+        justify-content:center;
+        width: 33%;
+        height:960px;
+        align-items:center;
+        /*border: solid 1px #dddddd;*/
+        /*border-bottom: none;*/
+        /*border-left: none;;*/
+    }
+    .hiBoy span{
+        display: block;
+        width: 350px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 30px;
+        color:#666666;
+        font-size: 25px;;
+        cursor: pointer;
+        background: #5FB878;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .hiBoy p{
+        font-size: 20px;
+        background: #cccccc;
+        border-radius: 15px;
+        margin: 15px;
+        /*width: 140px;*/
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px #fff solid;
+        cursor: pointer;
+    }
+    .hiBoy a{
+        text-decoration: none;
+    }
+    .hiBoy p:hover{
+        border: 1px #5FB878 solid;
+        background: #fff;
+        border-radius: 15px;
+    }
+    body{
+        background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523292671471&di=ff7aaa78927a6eea63ec6052e3e35ed2&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fd1a20cf431adcbef1ec04b28a7af2edda3cc9f23.jpg") 0 0 no-repeat scroll transparent ;
+        background-size: 100% 100%;
+    }
+</style>
+
+<body>
+<div >
+
+    <div class="hiBoy">
+       <span>这里是我做过的东西链接</span>
+        <a href="https://github.com/MangoTsing/hlju"><p class="pp">黑龙江大学教代网</p></a>
+        <a href="https://github.com/MangoTsing/ErXue">  <p class="pp">耳穴网</p></a>
+        <a href="https://github.com/MangoTsing/kys24"> <p>哈尔滨正大钰河公司电商平台</p></a>
+        <a href="https://github.com/MangoTsing/JavaScript-2048game"><p> 原生js写的完整2048游戏</p></a>
+    </div>
+    <div class="hiBoy">
+        <span>My Blog 下的功能</span>
+        <a href="posts"><p >查看文章</p></a>
+        <a href="signin">  <p>登录</p></a>
+        <a href="signup"> <p>注册</p></a>
+
+    </div>
+    <div class="hiBoy">
+        <span>这里是我的博文链接</span>
+        <a href="./2048.html"><p >2048游戏</p></a>
+        <a href="./作用域1.html"><p >作用域详细研究(1)</p></a>
+    </div>
+    <strong>mangotsing_sgyp blog</strong>
+</div>
+</body>
+<script>
+    (function(){
+        var leng=document.getElementsByTagName('p');
+        for(var i=0;i<leng.length;i++){
+
+            if(leng[i].clientWidth<140){
+
+                leng[i].style.width='140px';
+                console.log(leng[i].clientWidth)
+            }
+        }
+    })();
+</script>
+</html>
